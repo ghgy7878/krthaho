@@ -16,7 +16,7 @@ COPY . /app
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file.
-RUN pip install -r app/requirements.txt
+RUN pip install -r requirements.txt
 RUN python init_db.py
 
 #Expose the application port 3111
